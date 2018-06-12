@@ -1,0 +1,300 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Pratish Shetty</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="pratish.css">
+    <link rel="icon" href="favicon.png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120632282-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-120632282-1');
+        </script>
+
+    
+    <script>
+      $(document).ready(function(){
+
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+          if (this.hash !== ""){
+
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 900, function(){
+
+              window.location.hash = hash;
+            });
+          }
+        });
+      })
+    </script>
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">PS</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#techknown">Technologies Known</a></li>
+            <li><a href="#workex">Work Experience</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#recommendation">Recommendations</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron text-center">
+      <h1>Pratish Shetty</h1>
+      <p>Availability: December 2018</p>
+      <a href="https://www.linkedin.com/in/pratish-shetty/" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/pshetty18" target="_blank"><i class="fa fa-github"></i></a>
+      <a href="https://www.facebook.com/pratish.shetty" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com/shettypratish/" target="_blank"><i class="fa fa-instagram"></i></a>
+    </div>
+
+    <div id="aboutme" class="container-fluid">
+      <div class="row">
+       <h2 class="text-center">About Me</h2><br>
+       <div class="col-sm-4">
+        <img src="Pratish.png" class="img-circle hidden-sm-down">
+      </div>
+      <div class="col-sm-8">
+        <p align="justify">I am a Graduate student at the University of Massachusetts Dartmouth, enrolled in a Master's program in Computer Science. I am interested in the field of Web/Software Development. My interest in these fields has grown because of the courses I completed on Software Engineering and Algorithms. Along with this, I have taken courses on Artificial Intelligence, Software Project Management, Advanced Computer Systems, Advanced Computer Networks, and Data Visualization.</p>
+        <p align="justify">My hobbies include cooking, watching different sports like soccer, cricket, football, boxing, and so on. I also like to travel to different places which helps me with my photography.</p>
+        <br>
+        <a id="resume" href="Pratish Shetty_resume.pdf" class="btn btn-default btn-lg" target="_blank">Resume</a><br><br>
+      </div>
+    </div>
+  </div>
+
+  <div id="education" class="container-fluid bg-grey">
+  	<h2 class="text-center">Education</h2><br>
+  	<div>
+  		<h4>University of Massachusetts Dartmouth - Dartmouth, MA</h4>
+  		<h4>Master of Science - Computer Science</h4>
+  		<h4>Jan 2017 - Dec 2018</h4>
+  		<p><b>Course material:</b></p>
+  		<p align="justify">Paradigmatic Software Development, Algorithms, Artificial Intelligence, Technical Computer Science, Advanced Computer Systems, Computer Networks, Computer System and Performance Evaluation, Data Visualization</p>
+  	</div><br>
+  	<div>
+  		<h4>University of Mumbai - Mumbai, India</h4>
+  		<h4>Bachelor of Engineering - Information Technology</h4>
+  		<h4>July 2011 - May 2016</h4>
+      <p><b>Course material:</b></p>
+  		<p align="justify">Software Engineering, Web Programming, Computer Programming, Algorithms and Data Structures, Image Processing, Soft Computing, Software Project Management, Computer Networks, Database Management Systems</p>
+  	</div>
+
+  </div>
+  <div id="techknown" class="container-fluid text-center">
+    <h2>Technologies Known</h2>
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+        <!--span class="glyphicon glyphicon-off"></span-->
+        <h4><u>Programming Languages</u></h4>
+        <p>C, C++, Java, Python, R</p>
+      </div>
+      <div class="col-sm-4">
+        <!--span class="glyphicon glyphicon-heart"></span-->
+        <h4><u>Web Technologies</u></h4>
+        <p>HTML, CSS, JavaScript, Bootstrap, PHP, D3</p>
+      </div>
+      <div class="col-sm-4">
+        <!--span class="glyphicon glyphicon-lock"></span-->
+        <h4><u>Databases</u></h4>
+        <p>MySQL</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <!--span class="glyphicon glyphicon-leaf"></span-->
+        <h4><u>Operating Systems</u></h4>
+        <p>Windows, Linux, Android</p>
+      </div>
+      <div class="col-sm-4">
+        <!--span class="glyphicon glyphicon-certificate"></span-->
+        <h4><u>Hardware Technologies</u></h4>
+        <p>Arduino Uno</p>
+      </div>
+      <div class="col-sm-4">
+        <!--span class="glyphicon glyphicon-wrench"></span-->
+        <h4><u>Others</u></h4>
+        <p>Microsoft Office, WireShark, Wordpress, GitHub</p>
+      </div>
+    </div>
+  </div>
+  <div id="workex" class="container-fluid text-center bg-grey">
+    <h2>Work Experience</h2><br>
+    <div class="row">
+    	<div class="col-sm-4">
+    		<img src="umassd.png" class="img-thumbnail">
+    		
+    	</div>
+      <div class="col-sm-8" style="text-align: left;">
+        <h4>Graduate Assistant - Library Systems and Digital Services, University of Massachusetts Dartmouth</h4>
+        <h4>Mar 2018 - Dec 2018</h4>
+        <ul>
+         <li>Managed and provided support for servers of the library website on Unix operating systems</li>
+         <li>Gained experience with content management systems like WordPress and Drupal</li>
+         <li>Documented coding and project development</li>
+         <li>Participated in the troubleshooting of hardware, software, and operating system issues</li>
+       </ul> 
+
+     </div>
+
+   </div><br>
+   <div class="row">
+    <div class="col-sm-4">
+     <img src="umassd.png" class="img-thumbnail">
+   </div>
+   <div class="col-sm-8" style="text-align: left;">
+    <h4>Student Lounge Attendant - Campus Services, University of Massachusetts Dartmouth</h4>
+    <h4>Sep 2017 - Mar 2018</h4>
+    <ul>
+     <li>Managed the student lounge on campus</li>
+     <li>Co-ordinated events in the lounge for other students</li>
+     <li>Polished customer service skills by communicating with people from different countries and cultures</li>
+   </ul>
+  </div>
+
+  </div><br>
+  <div class="row">
+    <div class="col-sm-4">
+     <img src="umassd.png" class="img-thumbnail">
+   </div>
+   <div class="col-sm-8" style="text-align: left;">
+    <h4>Operations - Campus Services, University of Massachusetts Dartmouth</h4>
+    <h4>Sep 2017 - Mar 2018</h4>
+    <ul>
+     <li>Organized events in the campus center, library, and auditorium</li>
+     <li>Enhanced interpersonal skills by working in teams</li>
+   </ul>
+  </div>
+  </div><br>
+
+  <div class="row">
+   <div class="col-sm-4">
+     <img src="packt.jpg" class="img-thumbnail">
+   </div>
+   <div class="col-sm-8" style="text-align: left;">
+    <h4>Technical Editor - Packt Publishing, Mumbai, India</h4>
+    <h4>Jun 2016 - Jan 2017</h4>
+    <ul>
+     <li>Technically edited the books published by Packt, using MS Office</li>
+     <li>Tested the code from different books on Python, Java, Microsoft ERP systems, and Node JS using different Operating Systems such as Unix and Windows</li>
+     <li>Utilized GitHub to commit code and source control</li>
+     <li>Researched about the current trends in the market regarding new programming languages</li>
+     <li>Mentored new employees in the team</li>
+     <li>Interviewed the customers to gain insight about their thinking of a book</li>
+     <li>Gave back to the community by participating in CSR activities</li>
+   </ul>
+  </div>
+
+  </div><br>
+  <div class="row">
+   <div class="col-sm-4">
+     <img src="hash.jpg" class="img-thumbnail">
+   </div>
+   <div class="col-sm-8" style="text-align: left;">
+    <h4>Marketing Intern - Megatech Digital, Mumbai, India</h4>
+    <h4>Oct 2015 - Nov 2015</h4>
+    <ul>
+     <li>Promoted their application ‘Hash’ using innovative multichannel and social media marketing</li>
+     <li>Represented the company by being the college ambassador for this application</li>
+   </ul>
+  </div>
+
+  </div>
+  </div>
+  <div id="project" class="container-fluid">
+  	<h2 class="text-center">Projects</h2><br>
+    
+    <h4>My Portfolio website (pratishshetty.com)</h4>
+  	<ul>
+  		<li>Created a dynamic website to demonstrate my portfolio</li>
+      <li>Utilized HTML, CSS, JavaScript, Bootstrap, and JQuery to develop the website</li>
+      <li>Supplemented the website with Google Analytics to track the traffic on my website</li>
+  	</ul>
+ 
+    
+    <br>
+  	<h4>Vehicular Traffic Detection using Ad Hoc Networks</h4>
+  	<ul>
+  		<li>Developed an Android application which displayed vehicular traffic movement around your current location using Google Maps API</li>
+  		<li>Incorporated Arduino Uno microprocessor and a wireless sensor for collection of traffic</li>
+  	</ul><br>
+  	<h4>Ecommerce Website</h4>
+  	<ul>
+  		<li>Architected and designed a PHP based e-commerce website with HTML and CSS as the client-side language and MySQL as the database</li>
+  	</ul>
+  </div>
+
+  <div id="recommendation" class="container-fluid bg-grey">
+    <div class="text-center">
+      <h2>Recommendations</h2><br>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="panel panel-default text-center">
+          <div class="panel-body-1">
+            <p>Pratish had joined my team as a Technical editor. He is one of the most dedicated and results oriented person I've met. He has great technical knowledge which helped him excel at his work. He is also a great team player and has mentored a couple of new editors in my team. I was particularly impressed by his ability to manage problems and difficult situation. His good technical skills helped him excel at his work. I'm sure he's going to be an asset to any organization he works with.</p>
+          </div>
+          <div class="panel-footer">
+            <h3>Tanvi Bhatt</h3>
+            <h3>Project Manager, Packt</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="panel panel-default text-center">
+          <div class="panel-body-2">
+            <p>He has the innate strength of taking criticism in his stride and works hard to achieve his stated goals. He has experienced a few setbacks in his academic journey but with his positive attitude and strong resolve he has successfully managed to overcome those with better academic performance in later stages of his bachelors degree. He is an eager and keen learner, with a genuine appreciation for academic knowledge and a keen interest to learn and know more. He has also been a regular attendee at several seminars and forums to understand the latest developments in his field.</p>
+          </div>
+          <div class="panel-footer">
+            <h3>Shrinidhi Gindi</h3>
+            <h3>Assistant Professor, M.H.S.S.C.O.E</h3>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <h4>Contact Information: pshetty@umassd.edu</h4>
+    <a href="https://www.linkedin.com/in/pratish-shetty/" target="_blank"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/pshetty18" target="_blank"><i class="fa fa-github"></i></a>
+    <a href="https://www.facebook.com/pratish.shetty" target="_blank"><i class="fa fa-facebook"></i></a>
+    <a href="https://www.instagram.com/shettypratish/" target="_blank"><i class="fa fa-instagram"></i></a>
+  </footer>
+  </body>
+  </html>
